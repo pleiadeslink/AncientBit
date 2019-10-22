@@ -1,3 +1,7 @@
+1.1
+- Added Patreon link
+- Added design to text boxes (before they were just white)
+
 1.0
 - Git
 - Added random sentences in header

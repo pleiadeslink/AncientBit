@@ -1,10 +1,10 @@
 /*
 	Theme Name: Ancient Bit
-	Theme URI: http://josemaestre.com
-	Description: Old-school simple theme
+	Theme URI: http://fractalmonkey.xyz
+	Description: Old-school minimal theme
 	Version: 1
-	Author: Jose Maestre
-	Author URI: http://josemaestre.com
+	Author: José Maestre
+	Author URI: http://fractalmonkey.xyz
 	Tags: HTML5, CSS3
 
 	License: MIT
@@ -14,6 +14,12 @@
 /*------------------------------------*\
     MAIN
 \*------------------------------------*/
+
+@font-face {
+    font-family: IBM;  
+    src: url(http://fractalmonkey.xyz/rebirth/wp-content/themes/ancientbit/fonts/ibm.ttf);  
+    font-weight: normal;  
+}
 
 /* global box-sizing */
 *,
@@ -30,11 +36,10 @@ html {
 	font-size:62.5%;
 }
 body {
-	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color:#DEDEDE;
 	background-color: #000;
 	font-family: 'Droid Sans Mono';
-	font-size: 13px;
+	font-size: 12px;
 	margin: 20px;
 	text-shadow: 1px 1px #000;
 }
@@ -74,8 +79,18 @@ input:focus {
     outline:0;
 }
 
-input,textarea {
-
+textarea, input, button {
+    margin-top: 4px;
+    color:#DEDEDE;
+    text-shadow: 1px 1px #000;
+    background-color: #364242;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+	box-shadow: 2px 2px 3px #000;
+    margin-bottom: 10px;
+    border: none;
 }
 
 /*------------------------------------*\
@@ -127,9 +142,14 @@ input,textarea {
 .blogtitle {
 	text-align: center;
 	font-weight: bold;
-	font-size: 40px;
+	margin-bottom:7px ;
+	font-size: 38px;
 	text-shadow: 1px 1px #000;
 	display: inline-block;
+	text-transform: uppercase;
+}
+.blogsubtitle {
+font-style: italic;
 }
 .blogtitle a {	color: #E3E3E3;}
 /* nav */
@@ -268,7 +288,7 @@ div.pmenu {
 .post-linkbox img {
 	float: left;
 	border: solid 1px #ededed;
-	padding: 10px:
+	padding: 10px;
 	width: 64px;
 	height: 64px;
 }
